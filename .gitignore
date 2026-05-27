@@ -1,0 +1,13 @@
+venv/
+local_storage/
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.mp4
+*.jpg
+*.jpeg
+*.png
+video_processor.py
+video_processor_enhanced.py
+thumbnail_enhancer.py
