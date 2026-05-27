@@ -58,6 +58,13 @@ class Settings(BaseSettings):
     # 4 means 4 videos can process simultaneously
     MAX_WORKERS: int = 4
 
+    # ── Local Storage ─────────────────────────────────
+    # Temporary local storage replacing AWS S3
+    # When AWS credentials are ready
+    # switch back to original s3.py
+    # Zero other code changes needed
+    LOCAL_STORAGE_PATH: str = "D:/mnr thumbnail/thumbnail-generator/local_storage"
+
     class Config:
         # Tell pydantic to read from .env file
         env_file = ".env"
